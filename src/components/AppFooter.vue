@@ -26,9 +26,6 @@
 
           <!-- Right side - Quick contacts with enhanced design -->
           <div class="flex flex-col items-center space-y-4">
-            <n-text depth="2" class="text-sm font-medium">
-              Быстрая связь
-            </n-text>
             <n-space :size="16">
               <n-button
                   v-for="contact in quickContacts"
