@@ -7,7 +7,7 @@ export default defineConfig({
     vue({
       template: {
         transformAssetUrls: {
-          base: null,
+          base: '/resume-portfolio/',
           includeAbsolute: false,
         },
       },
