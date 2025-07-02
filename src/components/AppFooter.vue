@@ -21,9 +21,6 @@
               <n-text depth="2" class="text-sm">
                 Middle Fullstack Developer
               </n-text>
-              <n-text depth="3" class="text-xs block mt-1">
-                © {{ currentYear }} Все права защищены
-              </n-text>
             </div>
           </div>
 

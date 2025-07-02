@@ -256,7 +256,7 @@ export default defineComponent({
         {
           name: 'Trendsy - Геймифицированная реферальная платформа',
           shortName: 'Trendsy',
-          role: 'Fullstack Developer, Product Owner',
+          role: 'Fullstack Developer',
           logo: trendsyLogo,
           description: 'Telegram Mini App с комплексной системой геймификации, интеграцией TON Blockchain и многоуровневой монетизацией. Полный цикл разработки от идеи до запуска с реальными пользователями.',
           technologies: ['Vue.js', 'Node.js', 'PostgreSQL', 'TON API', 'PostHog', 'Telegram Bot API'],
