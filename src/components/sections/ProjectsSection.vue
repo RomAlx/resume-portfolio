@@ -254,7 +254,7 @@ export default defineComponent({
           ]
         },
         {
-          name: 'Trendsy - Геймифицированная реферальная платформа',
+          name: 'Trendsy - Игровая реферальная платформа',
           shortName: 'Trendsy',
           role: 'Fullstack Developer',
           logo: trendsyLogo,
