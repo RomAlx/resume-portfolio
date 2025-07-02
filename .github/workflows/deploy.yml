@@ -3,9 +3,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 # Права для записи в GitHub Pages
 permissions:
@@ -47,9 +47,9 @@ jobs:
         with:
           path: ./dist
 
-  # Деплой на GitHub Pages (только для master ветки)
+  # Деплой на GitHub Pages (только для main ветки)
   deploy:
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
