@@ -1,0 +1,443 @@
+/* F-pattern optimized resume styles */
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header - F-pattern top horizontal line */
+.header-section {
+    background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
+    color: white;
+    padding: 2rem 0;
+}
+
+.photo-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto auto auto;
+    position: relative;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid rgba(255,255,255,0.3);
+    object-fit: cover;
+}
+
+.photo-placeholder {
+    display: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.header-section h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.header-section h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.contacts span {
+    font-size: 0.9rem;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* About - F-pattern second horizontal line */
+.about-section {
+    background: #f8f9fa;
+    padding: 1.5rem 0;
+    border-left: 4px solid #2E7D32;
+}
+
+.about-section h3 {
+    color: #2E7D32;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #2E7D32;
+    padding-bottom: 0.5rem;
+}
+
+/* Main content - F-pattern layout */
+.main-content {
+    padding: 2rem 0;
+}
+
+/* Left column - F-pattern left vertical line */
+.left-column {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-right: 3px solid #e9ecef;
+}
+
+.left-column h3 {
+    color: #495057;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #495057;
+    padding-bottom: 0.5rem;
+}
+
+.left-column h4 {
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.skill-category {
+    margin-bottom: 1.5rem;
+}
+
+.skill-category p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* Right column - F-pattern main content area */
+.right-column {
+    padding: 0 1.5rem;
+}
+
+.right-column h3 {
+    color: #2E7D32;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #2E7D32;
+    padding-bottom: 0.5rem;
+}
+
+/* Experience items */
+.experience-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.job-header h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.period {
+    color: #2E7D32;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.role {
+    font-style: italic;
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.achievements {
+    margin-bottom: 0.75rem;
+}
+
+.achievements li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.tech-stack {
+    font-size: 0.8rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Projects */
+.project-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-left: 4px solid #2E7D32;
+    border-radius: 0 4px 4px 0;
+}
+
+.project-item h4 {
+    color: #2c3e50;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.project-role {
+    color: #2E7D32;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.project-item p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+/* Additional info section */
+.additional-info {
+    margin-top: 10px;
+}
+
+.info-item {
+    margin-bottom: 8px;
+}
+
+.info-item h4 {
+    font-size: 11px;
+    font-weight: 600;
+    color: #2E7D32;
+    margin-bottom: 3px;
+}
+
+.info-item p {
+    font-size: 10px;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+/* Print optimization - Single page layout */
+@media print {
+    body {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        font-size: 11px;
+        line-height: 1.2;
+    }
+
+    .container {
+        max-width: none !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .header-section {
+        page-break-after: avoid;
+        padding: 10px 15px !important;
+    }
+
+    .header-section .row {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+    }
+
+    .header-section .col-md-2 {
+        flex: 0 0 90px !important;
+        max-width: 90px !important;
+    }
+
+    .photo-container {
+        width: 90px !important;
+        height: 90px !important;
+        margin: 0 auto 20px auto !important;
+    }
+
+    .profile-photo, .photo-placeholder {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .header-section .col-md-7 {
+        flex: 1 !important;
+        padding-left: 15px !important;
+    }
+
+    .header-section .col-md-3 {
+        flex: 0 0 180px !important;
+        max-width: 180px !important;
+    }
+
+    .about-section {
+        padding: 8px 15px !important;
+        page-break-after: avoid;
+    }
+
+    .main-content .container {
+        padding: 0 15px !important;
+    }
+
+    .main-content .row {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .left-column {
+        flex: 0 0 30% !important;
+        max-width: 30% !important;
+        padding: 8px !important;
+        margin-right: 15px !important;
+    }
+
+    .right-column {
+        flex: 1 !important;
+        padding: 8px !important;
+    }
+
+    /* Compact spacing for single page */
+    .experience-item {
+        margin-bottom: 8px !important;
+        padding-bottom: 6px !important;
+    }
+
+    .skill-category {
+        margin-bottom: 6px !important;
+    }
+
+    .achievements {
+        margin-bottom: 6px !important;
+    }
+
+    .achievements li {
+        margin-bottom: 2px !important;
+        font-size: 10px !important;
+        line-height: 1.2 !important;
+    }
+
+    .education-section {
+        page-break-inside: avoid;
+    }
+
+    /* No page breaks - single page layout */
+    .experience-item,
+    .section {
+        page-break-inside: avoid;
+        page-break-before: avoid;
+        page-break-after: avoid;
+    }
+
+    /* Compact font sizes */
+    .header-section h1 {
+        font-size: 18px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .header-section h2 {
+        font-size: 13px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .contacts {
+        gap: 8px !important;
+    }
+
+    .contacts span {
+        font-size: 9px !important;
+    }
+
+    .links div {
+        font-size: 9px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .left-column h3, .right-column h3, .about-section h3 {
+        font-size: 13px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .left-column h4 {
+        font-size: 10px !important;
+        margin-bottom: 4px !important;
+        margin-top: 6px !important;
+    }
+
+    .job-header h4 {
+        font-size: 11px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .period {
+        font-size: 9px !important;
+        margin-bottom: 2px !important;
+    }
+
+    .role {
+        font-size: 9px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .tech-stack {
+        font-size: 8px !important;
+        margin-top: 4px !important;
+    }
+
+    .skill-category p {
+        font-size: 9px !important;
+        line-height: 1.2 !important;
+    }
+
+    .education-section p {
+        font-size: 9px !important;
+        line-height: 1.2 !important;
+    }
+
+    .about-section p {
+        font-size: 10px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 6px !important;
+    }
+
+    /* Minimal margins for single page */
+    .section {
+        margin-bottom: 10px !important;
+    }
+
+    .main-content {
+        padding: 8px 0 !important;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .left-column {
+        border-right: none;
+        border-bottom: 3px solid #e9ecef;
+        margin-bottom: 1rem;
+    }
+
+    .header-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .contacts {
+        flex-direction: column;
+        gap: 0.5rem !important;
+    }
+}
