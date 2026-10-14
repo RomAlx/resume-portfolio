@@ -1,57 +1,12 @@
-# 💼 Портфолио
+# Романовский Алексей
 
-> 🎯 Современный сайт-портфолио для презентации опыта и навыков
+Сайт-резюме fullstack-разработчика. Страница и PDF говорят одно и то же: опыт, проекты, навыки, образование и контакты.
 
-## 🚀 О проекте
+[![Nuxt](https://img.shields.io/badge/Nuxt-4-00DC82?style=flat&logo=nuxt&logoColor=white)](https://nuxt.com)
+[![Vue.js](https://img.shields.io/badge/Vue.js-3-4FC08D?style=flat&logo=vuedotjs&logoColor=white)](https://vuejs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![PrimeVue](https://img.shields.io/badge/PrimeVue-4-41B883?style=flat)](https://primevue.org)
+[![Pinia](https://img.shields.io/badge/Pinia-FFD859?style=flat&logo=pinia&logoColor=black)](https://pinia.vuejs.org)
+[![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white)](https://sass-lang.com)
 
-Личный сайт-портфолио с интерактивным дизайном, анимированным фоном и адаптивной версткой.
-
-## ⚡ Технологии
-
-- **Frontend:** Vue.js 3 + Composition API
-- **UI:** Naive UI + Tailwind CSS
-- **Роутинг:** Vue Router
-- **Состояние:** Pinia
-- **Стилизация:** SCSS + CSS Grid/Flexbox
-- **Иконки:** Ionicons5
-- **Темы:** Светлая/темная с переключением
-
-## 🎨 Особенности
-
-- 🌗 **Темная/светлая тема** с автосохранением
-- 📱 **Адаптивный дизайн** для всех устройств
-- ✨ **Анимированный фон** с эффектом параллакса
-- 🎭 **Интерактивные компоненты** и hover-эффекты
-- 🚀 **Плавная навигация** между секциями
-- 📊 **Презентация проектов** с метриками
-- 💬 **Прямые контакты** и соцсети
-
-## 📂 Структура
-
-```
-src/
-├── components/
-│   └── sections/          # Секции сайта
-├── layouts/               # Макеты страниц
-├── stores/               # Pinia хранилища
-├── theme/                # Настройки тем
-├── composables/          # Vue композаблы
-└── assets/               # Статические файлы
-```
-
-## 🛠 Установка
-
-```bash
-npm install
-npm run dev
-```
-
-## 📄 Разделы
-
-- 👋 **Hero** - Приветствие и основная информация
-- 🎯 **О себе** - Профессиональный портрет
-- 💼 **Опыт** - Карьерный путь с достижениями
-- 🛠 **Навыки** - Технический стек по категориям
-- 🚀 **Проекты** - Ключевые работы с результатами
-- 🎓 **Образование** - Обучение и развитие
-- 📞 **Контакты** - Способы связи
+Сайт: [romalx.github.io/resume-portfolio](https://romalx.github.io/resume-portfolio/)

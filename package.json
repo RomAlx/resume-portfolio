@@ -2,27 +2,37 @@
   "name": "resume",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "^22.22.3 || ^24.15.0 || >=26"
+  },
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "nuxt typecheck && nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@vicons/ionicons5": "^0.13.0",
-    "date-fns": "^4.1.0",
-    "naive-ui": "^2.42.0",
-    "path": "^0.12.7",
-    "pinia": "^2.3.1",
-    "vue": "^3.5.17",
-    "vue-router": "^4.5.1"
+    "@lucide/vue": "^1.55.0",
+    "@nuxt/fonts": "^1.0.1",
+    "@pinia/nuxt": "^1.0.2",
+    "@primeuix/themes": "^2.0.3",
+    "@primevue/nuxt-module": "^4.5.5",
+    "nuxt": "^4.6.1",
+    "pinia": "^4.0.3",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.5.5",
+    "simple-icons": "^15.22.0",
+    "vue": "^3.5.43",
+    "vue-router": "^5.4.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.0",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.16",
-    "vite": "^7.0.0",
-    "vite-plugin-vue-devtools": "^7.7.7"
+    "@nuxt/eslint": "^1.17.0",
+    "eslint": "^10.12.0",
+    "sass-embedded": "^1.105.1",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.13"
   }
 }
