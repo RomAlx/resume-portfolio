@@ -1,0 +1,78 @@
+import type {Job} from '~/features/experience/types'
+
+export const jobs: Job[] = [
+  {
+    id: 'culture',
+    mark: '/logos/hse.png',
+    logo: true,
+    round: true,
+    company: 'Высшая школа экономики',
+    position: 'Fullstack-разработчик',
+    period: 'Сентябрь 2025 — настоящее время',
+    context: 'Единственный fullstack для развертывания и демонстрации моделей предиктивной аналитики для Департамента культуры Москвы.',
+    points: [
+      'Собрал инфраструктуру: Docker, nginx и пайплайны.',
+      'Развёл данные по двум PostgreSQL и закрыл схему миграциями.',
+      'Сделал backend на FastAPI единой точкой входа кабинета к справочникам и отчётам.',
+      'Собрал на Nuxt и TypeScript кабинет департамента: рекомендация цены, темп продаж и отчёты сети и театра.',
+      'Собрал мониторинг кабинета на Prometheus, Grafana и Loki.',
+    ],
+    stack: 'Python, FastAPI, PostgreSQL, Docker, nginx, Nuxt 4, TypeScript, PrimeVue, Git Actions',
+  },
+  {
+    id: 'payport',
+    mark: '/logos/payport.jpg',
+    logo: true,
+    round: true,
+    company: 'Payport LLC',
+    position: 'Fullstack-разработчик',
+    period: 'Сентябрь 2025 — настоящее время',
+    context: 'В команде собираю дополнительный продукт компании: систему бронирования объектов размещения.',
+    points: [
+      'Собрал ядро бронирования — объекты, брони и клиенты — и разложил его по луковой архитектуре.',
+      'Вынес услуги в микросервис на луковой архитектуре, сервисы бронирования общаются через ядро.',
+      'Свёл роли и фильтры доступа в общий пакет: правила едины для сервисов и подключаются в другие проекты.',
+    ],
+    stack: 'Laravel, Nuxt 4, TypeScript, PrimeVue, Pinia, Git Actions',
+  },
+  {
+    id: 'vbi',
+    mark: '/logos/vbi.png',
+    logo: true,
+    company: 'VBI',
+    position: 'Fullstack-разработчик',
+    period: 'Январь 2023 — сентябрь 2025',
+    context: 'Единственный разработчик внутренних систем рекламного агентства.',
+    points: [
+      'Сократил формирование отчётов рекламных кампаний с 2,5 часов до 1 минуты.',
+    ],
+    stack: 'Laravel, Vue 3, MySQL, Redis, Docker, Git Actions',
+  },
+  {
+    id: 'tessweb',
+    mark: '/logos/tessweb.png',
+    logo: true,
+    company: 'TessWeb',
+    position: 'Сооснователь, fullstack-разработчик',
+    period: 'Январь 2022 — январь 2023',
+    context: 'Сооснователь, продуктовая разработка.',
+    points: [
+      'Запустил Telegram Mini App с заработком toncoin.',
+    ],
+    stack: 'Vue.js, Node.js, PostgreSQL, Telegram, TON, Git Actions',
+  },
+  {
+    id: 'amocrm',
+    mark: '/logos/amocrm.png',
+    logo: true,
+    company: 'AmoCRM',
+    position: 'Backend-разработчик',
+    period: 'Июль 2020 — январь 2022',
+    context: 'Команда интеграций.',
+    points: [
+      'Разрабатывал и поддерживал WhatsApp-сервис.',
+      'Разработал плагин для e-commerce платформы.',
+    ],
+    stack: 'PHP, Symfony, MySQL, Redis, Docker, Git Actions',
+  },
+]
