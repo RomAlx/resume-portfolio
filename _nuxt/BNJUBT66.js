@@ -1,0 +1,1 @@
+import{$ as e,h as t,ot as n}from"#entry";function r(){n({variableName:t(`scrollbar.width`).name})}function i(){e({variableName:t(`scrollbar.width`).name})}export{i as n,r as t};

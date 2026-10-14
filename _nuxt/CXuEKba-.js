@@ -1,0 +1,1 @@
+import{pt as e}from"#entry";var t=e();export{t};
