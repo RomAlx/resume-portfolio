@@ -8,7 +8,7 @@ const themeBoot = `(function(){try{var t=localStorage.getItem('theme');var d=t?t
 
 const title = 'Алексей Романовский'
 const description = 'Fullstack developer'
-const image = 'https://romalx.github.io/resume-portfolio/og.png'
+const image = 'https://romalx.github.io/resume-portfolio/og.jpg'
 const baseURL = (globalThis as {process?: {env: Record<string, string | undefined>}}).process?.env.NUXT_APP_BASE_URL || '/'
 
 function publicFile(name: string) {
@@ -30,6 +30,7 @@ export default defineNuxtConfig({
         {property: 'og:locale', content: 'ru_RU'},
         {property: 'og:url', content: 'https://romalx.github.io/resume-portfolio/'},
         {property: 'og:image', content: image},
+        {property: 'og:image:type', content: 'image/jpeg'},
         {property: 'og:image:width', content: '512'},
         {property: 'og:image:height', content: '512'},
         {property: 'og:image:alt', content: 'РА'},
