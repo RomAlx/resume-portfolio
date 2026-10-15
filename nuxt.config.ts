@@ -60,6 +60,15 @@ export default defineNuxtConfig({
     'pages:extend'(pages: NuxtPage[]) {
       pages.splice(0, pages.length, ...routes)
     },
+    'build:manifest'(manifest) {
+      for (const key in manifest) {
+        const item = manifest[key]
+        if (!item) {
+          continue
+        }
+        item.dynamicImports = []
+      }
+    },
   },
   modules: [
     '@nuxt/eslint',
