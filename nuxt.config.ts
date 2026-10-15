@@ -6,8 +6,9 @@ import {routes} from './routes'
 
 const themeBoot = `(function(){try{var t=localStorage.getItem('theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('app-dark')}catch(e){}})()`
 
-const title = 'Романовский Алексей | fullstack-developer'
-const description = 'Романовский Алексей | fullstack-developer'
+const title = 'Алексей Романовский | Fullstack developer'
+const description = 'Алексей Романовский | Fullstack developer'
+const image = 'https://romalx.github.io/resume-portfolio/og.png'
 
 export default defineNuxtConfig({
   app: {
@@ -21,9 +22,14 @@ export default defineNuxtConfig({
         {property: 'og:type', content: 'website'},
         {property: 'og:locale', content: 'ru_RU'},
         {property: 'og:url', content: 'https://romalx.github.io/resume-portfolio/'},
+        {property: 'og:image', content: image},
+        {property: 'og:image:width', content: '512'},
+        {property: 'og:image:height', content: '512'},
+        {property: 'og:image:alt', content: 'РА'},
         {name: 'twitter:card', content: 'summary'},
         {name: 'twitter:title', content: title},
         {name: 'twitter:description', content: description},
+        {name: 'twitter:image', content: image},
         {name: 'theme-color', content: '#eef0f3', media: '(prefers-color-scheme: light)'},
         {name: 'theme-color', content: '#090a0c', media: '(prefers-color-scheme: dark)'},
       ],
