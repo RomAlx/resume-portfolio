@@ -6,8 +6,8 @@ import {routes} from './routes'
 
 const themeBoot = `(function(){try{var t=localStorage.getItem('theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('app-dark')}catch(e){}})()`
 
-const title = 'Алексей Романовский | Fullstack developer'
-const description = 'Алексей Романовский | Fullstack developer'
+const title = 'Алексей Романовский'
+const description = 'Fullstack developer'
 const image = 'https://romalx.github.io/resume-portfolio/og.png'
 
 export default defineNuxtConfig({
@@ -16,10 +16,11 @@ export default defineNuxtConfig({
       htmlAttrs: {lang: 'ru'},
       title,
       meta: [
-        {name: 'description', content: description},
-        {property: 'og:title', content: title},
-        {property: 'og:description', content: description},
-        {property: 'og:type', content: 'website'},
+        {name: 'description', content: description, tagPriority: 'critical'},
+        {property: 'og:title', content: title, tagPriority: 'critical'},
+        {property: 'og:description', content: description, tagPriority: 'critical'},
+        {property: 'og:site_name', content: 'Резюме', tagPriority: 'critical'},
+        {property: 'og:type', content: 'website', tagPriority: 'critical'},
         {property: 'og:locale', content: 'ru_RU'},
         {property: 'og:url', content: 'https://romalx.github.io/resume-portfolio/'},
         {property: 'og:image', content: image},
