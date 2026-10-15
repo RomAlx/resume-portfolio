@@ -9,6 +9,12 @@ const themeBoot = `(function(){try{var t=localStorage.getItem('theme');var d=t?t
 const title = 'Алексей Романовский'
 const description = 'Fullstack developer'
 const image = 'https://romalx.github.io/resume-portfolio/og.png'
+const baseURL = (globalThis as {process?: {env: Record<string, string | undefined>}}).process?.env.NUXT_APP_BASE_URL || '/'
+
+function publicFile(name: string) {
+  const prefix = baseURL.endsWith('/') ? baseURL : `${baseURL}/`
+  return `${prefix}${name}`
+}
 
 export default defineNuxtConfig({
   app: {
@@ -35,9 +41,9 @@ export default defineNuxtConfig({
         {name: 'theme-color', content: '#090a0c', media: '(prefers-color-scheme: dark)'},
       ],
       link: [
-        {rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg'},
-        {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32.png'},
-        {rel: 'apple-touch-icon', href: '/apple-touch-icon.png'},
+        {rel: 'icon', type: 'image/svg+xml', href: publicFile('favicon.svg')},
+        {rel: 'icon', type: 'image/png', sizes: '32x32', href: publicFile('favicon-32.png')},
+        {rel: 'apple-touch-icon', href: publicFile('apple-touch-icon.png')},
       ],
       script: [{innerHTML: themeBoot, tagPriority: 'critical'}],
     },
