@@ -3,8 +3,15 @@ import {computed, onBeforeUnmount, onMounted, ref} from 'vue'
 
 import Reveal from '~/components/Reveal.vue'
 import {projects} from '~/features/projects/content'
+import {withBase} from '~/services/url'
 import BaseButton from '~/ui/BaseButton.vue'
 import BaseCard from '~/ui/BaseCard.vue'
+
+const runtime = useRuntimeConfig()
+
+function mark(path: string) {
+  return withBase(runtime.app.baseURL, path)
+}
 
 const scroller = ref<HTMLElement | null>(null)
 const page = ref(0)
@@ -105,7 +112,10 @@ onBeforeUnmount(() => {
         class="project reveal"
       >
         <p class="kicker">{{ String(projectIndex + 1).padStart(2, '0') }}</p>
-        <h3>{{ project.name }}</h3>
+        <h3 class="project-name">
+          <img class="mark logo" :src="mark(project.mark)" alt="">
+          <span>{{ project.name }}</span>
+        </h3>
         <p>{{ project.place }}</p>
         <p class="period">{{ project.period }}</p>
         <p class="context">{{ project.summary }}</p>

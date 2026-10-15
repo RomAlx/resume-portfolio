@@ -3,5 +3,6 @@ export type Project = {
   place: string
   period: string
   summary: string
+  mark: string
 }
 
